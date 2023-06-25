@@ -1,0 +1,242 @@
+/*style.css - index.html*/
+
+/*CORES PRINCIPAIS USADAS NO SITE:
+#A79383,#FEF3D3,#ECD0B4,#F7F7EB,#E8D1C0*/
+
+/*conteiner envolve todo o header, main e footer*/
+.conteiner{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1%;
+  background-color: #F7F7EB;
+}
+
+/*banner do site dentro de header*/
+.banner{
+  background-color:#c6c9b6;
+  height: 15%;
+  padding: 1%;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*todos os textos dentro do banner*/
+.ban-text{
+  margin: 1%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid #fff;
+  border-radius: 20px;
+}
+
+/*titulo*/
+.banner h1{
+  font-size:75px;
+  color:#4e3927;
+  margin: 0px;
+}
+
+/*subtitulo*/
+.banner h3{
+  color: #816951;
+  margin: 0px;
+}
+
+/*classe das duas imagens a esquerda e direita no banner*/
+.ban-img{
+  width: 33%;
+  border-radius: 20px;
+}
+
+/*nav - todo o background (amarelo)*/
+nav { 
+  align-items: center;
+  justify-content: center;
+  background-color:#FEF3D3;
+  height: 40px;
+  display: flex;
+  margin: 0; 
+  border: 2px solid #dccdac;
+  border-radius: 20px;
+}
+
+/*ul dentro de nav, caixa de texto que envolve todos os li*/
+nav ul { 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+/*li dentro de ul, cada li é uma caixa*/
+nav li {
+  margin: 10px;
+  padding: 3px;
+  border: 2px dashed #ECD0B4;
+  border-radius: 20px;
+}
+
+/*a é o texto*/
+nav a {
+  color: #d2ab84;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+/*hover é quando o mouse passa em cima*/
+nav a:hover { 
+  text-decoration: underline;
+  color: #b5875a; 
+}
+
+/*main contém .janela-int*/
+main {
+  display: flex; 
+  flex-direction: column;
+  padding: 1%;
+  margin: 1% 0px;
+  background-color: #c8b19d;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*janela int é a janela "selecione seu bloco"*/
+.janela-int{
+  border-radius: 20px;
+  border: 2px solid #ECD0B4;
+  background-color: rgb(249, 220, 196);
+  height: 40px;
+  width: 100%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*texto*/
+.janela-int h3{
+  text-align: start;
+  margin: 1px 20px;
+  color: #b5875a;
+}
+
+
+/*principal é o quadrado maior (marrom claro), que dentro dele tem .blocos*/
+.principal {
+  width: 99%;
+  padding: 15px;
+  margin: 0px 10px;
+  border: 2px solid #dccdac;
+  background-color:#f0ddc6;
+  border-radius: 20px;
+}
+
+/*blocos é o quadrado menor (salmão), dentro dele tem #blocos*/
+.blocos{
+  margin: 15px;
+  border-radius: 20px;
+  background-color: #fde2ce;
+  border: 5px dashed #A79383;
+  width: 95%;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*"bloco ?"*/
+.blocos h4{
+  font-size: 25px;
+  margin: 1px 20px;
+  color: #b5875a;
+  text-align: center;
+}
+
+/*texto e imagem juntos*/
+#bloco1, #bloco2, #bloco3{
+  padding: 15px;
+  margin: 15px;
+}
+
+/*classe que envolve todas as imagens de #blocos*/
+.imgs{
+  width: 70%;
+  margin: 10px 50px;
+  transition: transform 0.3s ease;
+}
+
+/*hover das imagens*/
+.imgs:hover {
+  transform: scale(1.2);
+  filter: brightness(125%);
+}
+
+/*footer*/
+footer{
+  height: 125px;
+  background-color:#c6c9b6;
+  border: 2px solid #acb096;
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/*div que envolve todos os btn*/
+#foot-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/*classe das imagens do footer*/
+.foot-img{
+  height: 100px;
+  width: 400px;
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+/*mini texto no fim*/
+footer h5{
+  margin: 0px;
+  color: #a48160;
+}
+
+/*ul envolve todos os li*/
+footer ul { 
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  margin:10px;
+}
+
+/*li: cada caixa de texto*/
+footer li {
+  display: flex;
+  align-items: center;
+  background-color:#e5d8b8;
+  border: 2px dashed #bfa892;
+  border-radius: 20px;
+  margin: 0px 15px;
+  padding: 5px;
+}
+
+/*texto dos btn*/
+footer a { 
+  color:#8b6e50;
+  text-decoration: none;
+}

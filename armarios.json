@@ -1,0 +1,68 @@
+{
+  "blocos": [
+    {
+      "num": 1,
+      "quantidade": 20,
+      "armarios": [
+        { "id": 1, "status": "disponível" },
+        { "id": 2, "status": "ocupado" },
+        { "id": 3, "status": "disponível" },
+        { "id": 4, "status": "ocupado" },
+        { "id": 5, "status": "ocupado" },
+        { "id": 6, "status": "disponivel" },
+        { "id": 7, "status": "ocupado" },
+        { "id": 8, "status": "ocupado" },
+        { "id": 9, "status": "disponivel" },
+        { "id": 10, "status": "disponivel" },
+        { "id": 11, "status": "disponivel" },
+        { "id": 12, "status": "manutenção" },
+        { "id": 13, "status": "disponivel" },
+        { "id": 14, "status": "manutenção" },
+        { "id": 15, "status": "disponivel" },
+        { "id": 16, "status": "ocupado" },
+        { "id": 17, "status": "disponivel" },
+        { "id": 18, "status": "ocupado" },
+        { "id": 19, "status": "disponivel" },
+        { "id": 20, "status": "disponivel" }
+      ]
+    },
+    {
+      "num": 2,
+      "quantidade": 15,
+      "armarios": [
+        { "id": 1, "status": "ocupado" },
+        { "id": 2, "status": "disponível" },
+        { "id": 3, "status": "ocupado" },
+        { "id": 4, "status": "disponível" },
+        { "id": 5, "status": "manutenção" },
+        { "id": 6, "status": "disponivel" },
+        { "id": 7, "status": "ocupado" },
+        { "id": 8, "status": "disponivel" },
+        { "id": 9, "status": "disponivel" },
+        { "id": 10, "status": "disponivel" },
+        { "id": 11, "status": "ocupado" },
+        { "id": 12, "status": "ocupado" },
+        { "id": 13, "status": "disponivel" },
+        { "id": 14, "status": "disponivel" },
+        { "id": 15, "status": "manutenção" }
+      ]
+    },
+    {
+      "num": 3,
+      "quantidade": 10,
+      "armarios": [
+        { "id": 1, "status": "manutenção" },
+        { "id": 2, "status": "ocupado" },
+        { "id": 4, "status": "disponivel" },
+        { "id": 4, "status": "manutenção" },
+        { "id": 5, "status": "ocupado" },
+        { "id": 6, "status": "ocupado" },
+        { "id": 7, "status": "disponivel" },
+        { "id": 8, "status": "ocupado" },
+        { "id": 9, "status": "disponivel" },
+        { "id": 10, "status": "ocupado" },
+      ]
+    }
+  ]
+}
+

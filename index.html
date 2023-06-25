@@ -1,0 +1,118 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>studysafe</title>
+
+  <!-- Css externo -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+  <script src="script.js"></script>
+
+</head>
+  <!--body do site-->
+  <!--class conteiner que envolve toda estrutura do site-->
+  <div class="conteiner">
+    <!--header contém banner e navegação-->
+    <header>
+      <!--banner do site-->
+      <div class="banner">
+        <!--imagem de flor do lado esquerdo-->
+        <img class="ban-img" src="imgs/jardim.jpeg" alt="mini livros do banner">
+        <!--div que envolve os dois textos-->
+        <div class="ban-text">
+          <h1>studysafe</h1>
+          <h3>seu espaço pessoal no campus.</h3>
+        </div>
+        <!--fim de ban-text-->
+        <!--imagem de flor do lado direito-->
+        <img class="ban-img" src="imgs/jardim.jpeg" alt="mini livros do banner">
+      </div>
+      <!--fim do banner-->
+
+      <!--navegação do site-->
+      <nav>
+        <ul>
+          <li><a href="index.html">selecionar seu bloco</li>
+          <li><a href="https://qacademico.ifce.edu.br/">voltar para o q acadêmico</a></li>
+          <li><a href="https://intranet.maracanau.ifce.edu.br/login">intranet</a></li>
+          <li><a href="#">verificar sua reserva</a></li>
+          <li><a href="#">problemas com seu armário</a></li>
+          <li><a href="#">falar com coordenador</a></li>
+          <li><a href="#">avisos</a></li>
+        </ul>
+      </nav>
+      <!--fim de header que contém banner e navegação-->
+    </header>
+
+    <!--main contém classes: janela-int e principal-->
+    <main>
+      <!--janela inteira, apenas mensagem "selecionar seu bloco"-->
+      <div class="janela-int">
+        <h3>selecione seu bloco!</h3>
+      </div>
+
+      <!--principal contém apenas classe "blocos"-->
+      <div class="principal">
+        <!--blocos são todas as imagens que representam cada bloco-->
+        <div class="blocos">
+          <!--div bloco 1, contém h4 e imagem que ao clique vai ser direcionada ao armarios.html-->
+          <div id="bloco1">
+            <h4 class="b-text">bloco 1</h4>
+            <a href="armarios.html">
+              <!--todas as imagens fazem parte da classe "imgs"-->
+              <img class="imgs" src="imgs/sakura.jpeg" alt="icon bloco 1">
+            </a>
+            <div class="armarios"></div>
+            <!--fim da div bloco 1-->
+          </div>
+          <!--div bloco 2, contém h4 e imagem que ao clique vai ser redirecionada ao armarios.html-->
+          <div id="bloco2" data-blocos="4">
+            <h4 class="b-text">bloco 2</h4>
+            <a href="armarios.html">
+              <!--todas as imagens fazem parte da classe "imgs"-->
+              <img class="imgs" src="imgs/verde.jpeg" alt="icon bloco 2">
+            </a>
+            <div class="armarios"></div>
+            <!--fim da div bloco 2-->
+          </div>
+          <!--div bloco 3, contém h4 e imagem que ao clique vai ser redirecionada ao armarios.html-->
+          <div id="bloco3" data-blocos="2">
+            <h4 class="b-text">bloco 3</h4>
+            <a href="armarios.html">
+              <!-- todas as imagens fazem parte da classe "imgs"-->
+              <img class="imgs" src="imgs/patoo.jpg" alt="icon bloco 3">
+            </a>
+            <div class="armarios"></div>
+            <!--fim da div bloco 3-->
+          </div>
+          <!--fim da div blocos-->
+        </div>
+    </main>
+    
+    <footer>
+      <!--imagem do footer a esquerda-->
+      <img class="foot-img" src="imgs/sky.jpeg" alt="mini imagem do footer">
+      <!--todos os botões-->
+      <div id="foot-btn">
+        <ul>
+          <li><a href="#">contato</a></li>
+          <li><a href="#">termos de uso</a></li>
+          <li><a href="#">ajuda ao cliente</a></li>
+          <li><a href="#">sobre nós</a></li>
+        </ul>
+        <!--mini texto de creditos-->
+        <h5>made by pinkspace.com | © 2023 pinkspace.com - todos os direitos reservados.</h5>
+      </div>
+      <!--imagem do footer a direita-->
+      <img class="foot-img" src="imgs/sky.jpeg" alt="mini imagem do footer">
+    </footer>
+  </div>
+  <!--class conteiner que envolve toda estrutura do site-->
+</body>
+<!--body do site-->
+</html>

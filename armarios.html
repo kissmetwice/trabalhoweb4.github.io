@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>studysafe</title>
+
+  <!-- Css externo -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/armarios.css">
+  <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
+  <script src="script.js"></script>
+
+</head>
+
+<body onload="mostrarArmarios()">
+  <!--body do site-->
+  <!--class conteiner que envolve toda estrutura do site-->
+  <div class="conteiner">
+
+    <!--header contém banner e nav-->
+    <header>
+
+      <!--banner do site-->
+      <div class="banner">
+        <img class="ban-img" src="imgs/jardim.jpeg" alt="mini livros do banner">
+        <div class="ban-text">
+          <h1>studysafe</h1>
+          <h3>seu espaço pessoal no campus.</h3>
+        </div>
+
+        <img class="ban-img" src="imgs/jardim.jpeg" alt="mini livros do banner">
+      </div>
+
+      <!--nav do site-->
+      <nav>
+        <ul>
+          <li><a href=index.html>selecionar seu bloco</li>
+          <li><a href="https://qacademico.ifce.edu.br/">voltar para o q acadêmico</a></li>
+          <li><a href="#">intranet</a></li>
+          <li><a href="#">verificar sua reserva</a></li>
+          <li><a href="#">problemas com seu armário</a></li>
+          <li><a href="#">falar com coordenador</a></li>
+          <li><a href="#">avisos</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!--main vai conter principal-->
+    <main>
+
+      <!--janela inteira-->
+      <div class="janela-int">
+        <h3>escolha seu armário!</h3>
+      </div>
+
+      <!--principal vai conter 1 janela inteira, armarios e 2 janelas laterais-->
+      <div class="principal">
+
+        <!--janela lateral esquerda-->
+        <div class="jan-avisos">
+          <img class="img-flor" src="imgs/flowers.jpeg" alt="mini florzinhas">
+          <div id="bem-vindo">
+            <h3>bem vindo!</h3>
+            <p>olá, seja bem vindo ao sistema de armários do ifce!<br>
+              aqui você pode ver os armários disponíveis no bloco.<br>
+              para reserva, clique em "reservar"<br>
+              por favor, selecione apenas 1 armário por vez. <br></p>
+          </div>
+
+          <div id="status">
+            <h3>status</h3>
+            <ul>
+              <li>
+                <div class="stt" style="background-color: lightgreen;"></div>disponível
+              </li>
+              <li>
+                <div class="stt" style="background-color: lightcoral;"></div>ocupado
+              </li>
+              <li>
+                <div class="stt" style="background-color: lightyellow;"></div>manutenção
+              </li>
+            </ul>
+          </div>
+          <img class="img-flor" src="imgs/flowers.jpeg" alt="mini florzinhas">
+        </div>
+        <!--class janelas-lat-->
+
+        <!--classe que envolve todos os armários-->
+        <div class="cont-armarios" id="armariosContainer">
+
+          <!--armários-->
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">1</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">2</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">3</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">4</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">5</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">6</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">7</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">8</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">9</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">10</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">11</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">12</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">13</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">14</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">15</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">16</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">17</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">18</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">19</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+          <div class="armario">
+            <img class="imgs" src="imgs/caticon.jpg" alt="mini icon de armário 1">
+            <h4 id="n-arm">20</h4>
+            <div class="stt"></div>
+            <button id class="btn-stt" onclick="alterarStt(this)"> reservar </button>
+            <h5 id="h5stt">Disponível</h5>
+          </div>
+
+        </div>
+        <!--cont-armarios-->
+
+        <!--div janelas laterais, envolve as janelas esq e dir-->
+        <div class="janelas-lat">
+
+        </div>
+        <!--principal-->
+
+        <!--footer-->
+
+
+    </main>
+    <footer>
+      <img class="foot-img" src="imgs/sky.jpeg" alt="mini imagem do footer">
+      <div id="foot-text">
+        <ul>
+        <li><a href="#">contato</a></li>
+        <li><a href="#">termos de uso</a></li>
+        <li><a href="#">ajuda ao cliente</a></li>
+        <li><a href="#">sobre nós</a></li>
+      </ul>
+      <h5>made by pinkspace.com | © 2023 pinkspace.com - todos os direitos reservados. </h5>
+      </div>
+      
+      <img class="foot-img" src="imgs/sky.jpeg" alt="mini imagem do footer">
+    </footer>
+  </div>
+  <!--class conteiner que envolve toda estrutura do site-->
+</body>
+<!--body do site-->
+
+</html>
+</body>
+
+</html>
